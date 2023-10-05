@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile share modal</title>
+    <link rel="shortcut icon" href="./assets/bohemia favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--wrapper-->
+<section class="wrapper">
+    <div class="circle1"></div>
+    <div class="circlr2"></div>
+    <!--card-->
+    <div class="card">
+        <div class="profile"><img src="./assets/profile img.JPG" alt=""></div>
+        <p class="name"> Pawan Tanwar</p>
+        <p class="desc"> Web Developer</p>
+        <div class="btncontainer">
+
+            <button class="sharebtn commonprop" onclick="openModal()">
+                <i class="fa-solid fa-share"></i> Share My Profile</button>
+
+            <button class="followbtn commonprop" > Follow Me</button>
+        </div>
+    </div>
+
+    <!--share card-->
+    <div class="sharecontainerdiv">
+        <!--Smpdiv-->
+        <div class="smpdiv">
+            <p>Share My Profile</p>
+            <div onclick="closeModal()" class="close"><i class="fa-solid fa-xmark close"></i></div>
+        </div>
+        
+        <p class="sharepara">share this via</p>
+        <!--logodiv-->
+        <div class="logo">
+         <a href="#" class="icon" id="facebook">
+             <i class="fa-brands fa-facebook-f"></i>
+           </a>
+           <a href="#" class="icon" id="twitter">
+             <i class="fa-brands fa-twitter"></i>
+           </a>
+           <a href="#" class="icon" id="instagram">
+             <i class="fa-brands fa-instagram"></i>
+           </a>
+           <a href="#" class="icon" id="whatsapp">
+             <i class="fa-brands fa-whatsapp"></i>
+           </a>
+           <a href="#" class="icon" id="telegram">
+             <i class="fa-brands fa-telegram"></i>
+           </a>
+        </div>
+    </div>
+</section>
+<div onclick="closeModal()" class="overlay"></div>
+   <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+   <script src="./script.js"></script> 
+</body>
+</html>
